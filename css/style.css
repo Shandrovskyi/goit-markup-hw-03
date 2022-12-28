@@ -68,9 +68,7 @@ img {
     line-height: 1.66;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--accent-color);
-    padding-left: 126px;
-    
+    color: var(--accent-color); 
 }
 
 .studio-header{
@@ -135,8 +133,10 @@ img {
 /* ========================</PROFILE HEADER>=================== */
 /* ==============================<HERO>================== */
 
-.hero .container {
-    background-color: var(--title-color)
+.hero {
+    background-color: var(--title-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 
@@ -145,7 +145,6 @@ img {
     line-height: 1.07em;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    padding-top: 188px;
     text-align: center;
 }
 
@@ -162,7 +161,6 @@ img {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    margin-bottom: 188px;
     margin-top: 48px;
 }
 
@@ -178,18 +176,22 @@ img {
 /* ==========================<SECTION ABOUT>================== */
 
 .section-about {
+    padding-top: 120px;
 }
+
 .section-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+}
+
+.section-li {
+    flex-basis: calc((100%-3*24px)/4);
 }
 
 .section-title {
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.5em;
     letter-spacing: 0.02em;
     color: var(--title-color);
     margin-bottom: 8px;
@@ -197,49 +199,49 @@ img {
 
 .section-text{
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.5em;
 }
 
 /* ==========================</SECTION ABOUT>================== */
 
 /* ==========================<EXAMPLES>================== */
 .examples {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 .examples-title {
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-color:  var(--title-color);
-margin-bottom: 72px;
-text-align: center;
-padding-top: 120px;
-
+    font-size: 36px;
+    line-height: 1.11em;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    margin-bottom: 72px;
+    text-align: center;
 }
-
 
 .examples-list {
     display: flex;
     gap: 24px;
+    flex-basis: calc((100%-2*24)/3);
     justify-content: center;
-    padding-bottom: 120px;
 }
-
 /* ==========================</EXAMPLES>================== */
 
 /* ==========================<TEAM>================== */
 
-.team .container {
+.team {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 .team-title { 
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.11em;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -250,6 +252,7 @@ padding-top: 120px;
     letter-spacing: 0.02em;
     color: var(--title-color);
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-proffecion {
@@ -258,14 +261,14 @@ padding-top: 120px;
 
 
 .team-list {
-display: flex;
-gap: 24px;
+    display: flex;
+    gap: 24px;
 
 }
 
 .team-item {
     width: calc((100-73px)/4);
-    padding-bottom: 120px;
+    
 }
 
 .team-card {
@@ -280,11 +283,10 @@ gap: 24px;
 /* ==========================<FOOTER>================== */
 
 
-.footer .container {
+.footer {
     background-color: var(--title-color);
     padding-bottom: 100px;
     padding-top: 100px;
-    padding-left: 156px;
 }   
 
 
@@ -328,12 +330,15 @@ gap: 24px;
 
 /*========<BUTTONS>======= */
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .buttons-wrap {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 96px;
     margin-bottom: 72px;
 }
 
@@ -377,13 +382,12 @@ gap: 24px;
 
 /*=========</PORTFOLIO>========*/
 
-.portfolio-photo-wrap{
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 24px;
     row-gap: 48px;
-    padding-bottom: 120px;
 }
 
 
@@ -402,6 +406,7 @@ gap: 24px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color) ;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
